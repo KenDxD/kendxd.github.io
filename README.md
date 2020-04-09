@@ -1,1 +1,0 @@
-# kendxd.github.io
