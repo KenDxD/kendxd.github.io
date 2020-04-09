@@ -1,0 +1,27 @@
+img {
+    max-width: auto;
+    max-height: auto;
+}
+
+.portrait {
+    height: 80px;
+    width: 30px;
+}
+
+.landscape {
+    height: 30px;
+    width: 80px;
+}
+
+.square {
+    height: 75px;
+    width: 75px;
+}
+
+a {
+	color: blue;
+}
+
+a:hover {
+  color: skyblue;
+}
