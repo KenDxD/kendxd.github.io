@@ -1,0 +1,20 @@
+<package>
+	<id>com.irepo.boxy4</id>
+	<name>Boxy4</name>
+	<version>4.1.1</version>
+	<compatibility>
+		<firmware>
+			<miniOS>iOS 13</miniOS>
+		</firmware>
+	</compatibility>
+	<changelog>
+		<change>Support iOS 13</change>
+	</changelog>
+	<links>
+		<link>
+			<name>KenDxD</name>
+			<url>https://kendxd.github.io</url>
+			<iconclass>fa fa-github</iconclass>
+		</link>
+	</links>
+</package>
