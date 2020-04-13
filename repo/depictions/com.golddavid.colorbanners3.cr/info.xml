@@ -12,7 +12,6 @@
 	</dependencies>
 	<descriptionlist>
 		<description>Customize your notifications look! (iOS 13 only)</description>
-		</description>
 	</descriptionlist>
 	<changelog>
 		<change>Add new setting to use unthemed icons to fetch adaptive colors. Requires Snowboard.</change>
