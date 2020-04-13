@@ -1,0 +1,7 @@
+<changelog>
+	<changes>
+		<version>1.0.1</version>
+		<change>Add new setting to use unthemed icons to fetch adaptive colors. Requires Snowboard.</change>
+		<change>Fix issue where the custom background gradient color wouldn't work.</change>
+	</changes>
+</changelog>
