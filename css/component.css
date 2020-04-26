@@ -325,3 +325,8 @@ html.js,
 		margin: 1em;
 	}
 }
+
+a.disable {
+  pointer-events: none;
+  cursor: default;
+}
