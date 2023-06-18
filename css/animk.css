@@ -22,5 +22,6 @@
 	font-size: 40px;
 	font-weight: 500;
   text-align : center;
-  margin: auto
+  margin: auto;
+  justify-content: center;
 }
