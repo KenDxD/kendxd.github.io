@@ -1,0 +1,184 @@
+html,
+body {
+    background-color: #ace7ff;
+    font-size: 62.5%;
+    line-height: 3rem;
+    margin: 0;
+    display: flex;
+    cursor: default;
+    justify-content: center;
+    align-items: center;
+    height: 105vh;
+    width: 100vw;
+    padding: 0;
+}
+
+.main {
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1,
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    width: 100%;
+    z-index: 10;
+}
+
+h1 {
+    font-size: 18px;
+    font-size: 2.8em;
+    font-size: 3.5vw;
+    color: rgba(0, 0, 0, 0.5);
+    top: 14%;
+}
+
+h2 {
+    bottom: 1vh;
+    font-size: 10px;
+    font-size: 1.5rem;
+    color: rgba(0, 0, 0, 0.35);
+}
+
+h1 span {
+    font-size: 10.6vw;
+    line-height: 1em;
+    z-index: 100;
+    text-shadow: 0.04em 0.04em 0 #fcfade;
+    display: block;
+}
+
+h1 span,
+h1 span:after {
+    font-weight: 600;
+    color: #e17171;
+    white-space: nowrap;
+    display: inline-block;
+    position: relative;
+    letter-spacing: 0.16em;
+}
+
+h1 span:after {
+    color: rgba(0, 0, 0, 0.25);
+    text-shadow: none;
+    position: absolute;
+    left: 0.08em;
+    top: 0.08em;
+    z-index: -1;
+}
+
+span.one:after {
+    content: "Will you";
+}
+
+span.two:after {
+    content: "be my";
+}
+
+span.three:after {
+    content: "valentine?";
+}
+
+@media screen and (min-width: 880px) {
+    h1 {
+        font-size: 2.5vw;
+    }
+
+    h1 span {
+        font-size: 6vw;
+    }
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+	margin: 25px;
+	float: left;
+	box-shadow: 5px 5px 5px 0px rgba(0,0,0,.05),
+				5px 5px 10px 10px rgba(0,0,0,0.05);
+	border: 1px solid #eee;
+	width: 200px;
+	height: 300px;
+	border-radius: 10px;
+	position: relative;
+}
+
+.heartcard {
+	width: 30px;
+	height: 30px;
+	background-color: #d44;
+	transform: rotate(45deg);
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+.heartcard::before, .heartcard::after {
+	content: '';
+	display: block;
+	background-color: #d44;
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	position: absolute;
+	top: -50%;
+	left: 0%;
+}
+
+.heartcard::after {
+	top: 0;
+	left: -50%;
+}
+.ace-top, .ace-bottom {
+	color: #d44;
+	font-weight: bold;
+	position: absolute;
+	font-size: 24px;
+}
+
+.ace-top .heartcard, .ace-bottom .heartcard {
+	width: 10px;
+	height: 10px;
+	margin-left: -5px;
+	margin-top: 20px;
+}
+
+.ace-top {
+	top: 15px;
+	left: 15px;
+}
+
+.ace-bottom {
+	bottom: 15px;
+	right: 15px;
+	transform: rotate(180deg);
+}
+
+#falling-hearts {
+    animation: wobble 60s ease-in infinite;
+    position: fixed;
+    inset: 0 0 0 0;
+    pointer-events: none;
+}
+
+.heart {
+    pointer-events: none;
+    opacity: 0;
+    z-index: 1000;
+    position: fixed;
+}
